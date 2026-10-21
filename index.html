@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Deviner nombre</title>
+</head>
+<body style="font-family:sans-serif; padding:20px; text-align:center">
+  <div id="top" style="color:gray"></div>
+  <h4>Devine le nombre (1-100)</h4>
+  
+  <div id="espace">
+    <input id="nombre" type="number" placeholder="Entrez un nombre" />
+    <p>
+      <button onclick="check()">Tester</button>
+      <button onclick="abandonnez()">Abandonnez</button>
+    </p>
+  </div>
+  
+  <p id="msg">Bonne chance !</p>
+  
+  <div id="record">
+    <p id="mesRecord"></p>
+    <button onclick="rejouer()">Rejouer</button>
+  </div>
+  
+  <script src="./serveur.js"></script>
+</body>
+</html>
